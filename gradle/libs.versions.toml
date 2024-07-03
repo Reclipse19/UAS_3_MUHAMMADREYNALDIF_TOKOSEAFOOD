@@ -1,0 +1,40 @@
+[versions]
+activityKtx = "1.9.0"
+agp = "8.5.0"
+compiler = "4.15.1"
+constraintlayout = "2.1.4"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+lifecycleExtensions = "2.2.0"
+lifecycleLivedataKtx = "2.8.3"
+material = "1.10.0"
+roomCommon = "2.6.1"
+rxandroidVersion = "3.0.2"
+rxjava = "3.1.5"
+
+[libraries]
+activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activityKtx" }
+androidx-lifecycle-compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleLivedataKtx" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCommon" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCommon" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+github-glide = { module = "com.github.bumptech.glide:glide", version.ref = "compiler" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+room-common = { module = "androidx.room:room-common", version.ref = "roomCommon" }
+room-rxjava3 = { module = "androidx.room:room-rxjava3", version.ref = "roomCommon" }
+rxjava = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava" }
+rxjava3-rxandroid = { module = "io.reactivex.rxjava3:rxandroid", version.ref = "rxandroidVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+
